@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="theme-color" content="#2563eb">
+    <title>Premium Doors - Import & Custom Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-door-open"></i>
+                <span>Premium Doors</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#doors">Doors</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Premium Imported Doors</h1>
+            <p class="hero-subtitle">Transform your space with our exclusive collection of imported doors from around the world</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Browse Collection</button>
+                <button class="btn btn-secondary">Get Quote</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="image-slider">
+                <div class="slider-container">
+                    <div class="slider-track">
+                        <div class="slide active">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Premium Villa Door">
+                            <div class="slide-overlay">
+                                <h3>Villa Doors</h3>
+                                <p>Luxury residential doors</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Modern Room Door">
+                            <div class="slide-overlay">
+                                <h3>Room Doors</h3>
+                                <p>Interior door solutions</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Security Door">
+                            <div class="slide-overlay">
+                                <h3>Security Doors</h3>
+                                <p>Premium protection</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="French Door">
+                            <div class="slide-overlay">
+                                <h3>French Doors</h3>
+                                <p>Elegant double doors</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slider Controls -->
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn" onclick="changeSlide(-1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-btn next-btn" onclick="changeSlide(1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <!-- Slider Indicators -->
+                <div class="slider-indicators">
+                    <span class="indicator active" onclick="currentSlide(1)"></span>
+                    <span class="indicator" onclick="currentSlide(2)"></span>
+                    <span class="indicator" onclick="currentSlide(3)"></span>
+                    <span class="indicator" onclick="currentSlide(4)"></span>
+                </div>
+                
+                <!-- Slider Info -->
+                <div class="slider-info">
+                    <div class="slider-counter">
+                        <span id="current-slide">1</span> / <span id="total-slides">4</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Direct Import</h3>
+                    <p>We import doors directly from manufacturers worldwide</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Custom Options</h3>
+                    <p>Multiple varieties and finishes for each door type</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>Easy Payment</h3>
+                    <p>Secure payment with Chap - your local payment solution</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof & Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-subtitle">Join 500+ satisfied customers who transformed their spaces</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The luxury villa door exceeded all my expectations. The quality is outstanding and the import process was seamless. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Ahmed Hassan</h4>
+                                <span>Villa Owner, Addis Ababa</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Professional service from start to finish. The security doors are exactly what we needed for our business. Will definitely order again!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Meron Tekle</h4>
+                                <span>Business Owner, Dire Dawa</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Amazing quality doors at competitive prices. The French doors transformed our living room completely. Thank you!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Yonas Bekele</h4>
+                                <span>Homeowner, Bahir Dar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Trust Indicators -->
+            <div class="trust-indicators">
+                <div class="trust-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>100% Quality Guarantee</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span>Fast Import Delivery</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-undo"></i>
+                    <span>30-Day Money Back</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-headset"></i>
+                    <span>24/7 Customer Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Limited Time Offer -->
+    <section class="offer-section">
+        <div class="container">
+            <div class="offer-banner">
+                <div class="offer-content">
+                    <div class="offer-badge">
+                        <i class="fas fa-fire"></i>
+                        <span>LIMITED TIME</span>
+                    </div>
+                    <h2>Special Import Deal - Save Up to 25%</h2>
+                    <p>Order this month and get premium imported doors at wholesale prices. Limited stock available!</p>
+                    <div class="offer-timer">
+                        <div class="timer-item">
+                            <span id="days">15</span>
+                            <label>Days</label>
+                        </div>
+                        <div class="timer-item">
+                            <span id="hours">08</span>
+                            <label>Hours</label>
+                        </div>
+                        <div class="timer-item">
+                            <span id="minutes">45</span>
+                            <label>Minutes</label>
+                        </div>
+                        <div class="timer-item">
+                            <span id="seconds">30</span>
+                            <label>Seconds</label>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-large" onclick="scrollToGallery()">
+                        <i class="fas fa-bolt"></i>
+                        Claim Your Discount Now
+                    </button>
+                </div>
+                <div class="offer-image">
+                    <i class="fas fa-percentage"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Door Gallery</h2>
+            <p class="section-subtitle">Explore our complete collection of imported doors</p>
+            
+            <div class="gallery-categories">
+                <!-- Villa Doors Gallery -->
+                <div class="gallery-category">
+                    <div class="category-header" onclick="toggleCategory('villa')">
+                        <div class="category-info">
+                            <h3><i class="fas fa-home"></i> Villa Doors</h3>
+                            <p>Luxury residential doors for villas and premium homes</p>
+                        </div>
+                        <div class="category-toggle">
+                            <span class="door-count">12 Varieties</span>
+                            <i class="fas fa-chevron-down toggle-icon" id="villa-icon"></i>
+                        </div>
+                    </div>
+                    <div class="category-content" id="villa-content">
+                        <div class="door-grid">
+                            <div class="gallery-door-item" onclick="openDoorModal('Classic Villa', 'ETB 8,500', 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80')">
+                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Classic Villa Door">
+                            <div class="door-overlay">
+                                <h4>Classic Villa</h4>
+                                <p>ETB 8,500</p>
+                                <div class="stock-indicator">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <span>Only 3 left!</span>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="gallery-door-item" onclick="openDoorModal('Modern Villa', 'ETB 11,500', 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80')">
+                                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Modern Villa Door">
+                                <div class="door-overlay">
+                                    <h4>Modern Villa</h4>
+                                    <p>ETB 11,500</p>
+                                </div>
+                            </div>
+                            <div class="gallery-door-item" onclick="openDoorModal('Luxury Villa', 'ETB 17,500', 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80')">
+                                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Luxury Villa Door">
+                                <div class="door-overlay">
+                                    <h4>Luxury Villa</h4>
+                                    <p>ETB 17,500</p>
+                                </div>
+                            </div>
+                            <div class="gallery-door-item" onclick="openDoorModal('Executive Villa', 'ETB 20,500', 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80')">
+                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Executive Villa Door">
+                                <div class="door-overlay">
+                                    <h4>Executive Villa</h4>
+                                    <p>ETB 20,500</p>
+                                </div>
+                            </div>
+                            <div class="gallery-door-item" onclick="openDoorModal('Premium Villa', 'ETB 26,500', 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80')">
+                                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Premium Villa Door">
+                                <div class="door-overlay">
+                                    <h4>Premium Villa</h4>
+                                    <p>ETB 26,500</p>
+                                </div>
+                            </div>
+                            <div class="gallery-door-item" onclick="openDoorModal('Royal Villa', 'ETB 38,500', 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80')">
+                                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Royal Villa Door">
+                                <div class="door-overlay">
+                                    <h4>Royal Villa</h4>
+                                    <p>ETB 38,500</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Doors Gallery -->
+                <div class="gallery-category">
+                    <div class="category-header" onclick="toggleCategory('room')">
+                        <div class="category-info">
+                            <h3><i class="fas fa-bed"></i> Room Doors</h3>
+                            <p>Interior doors for bedrooms, bathrooms, and living spaces</p>
+                        </div>
+                        <div class="category-toggle">
+                            <span class="door-count">8 Varieties</span>
+                            <i class="fas fa-chevron-down toggle-icon" id="room-icon"></i>
+                        </div>
+                    </div>
+                    <div class="category-content" id="room-content">
+                        <div class="door-grid">
+                            <div class="gallery-door-item" onclick="openDoorModal('Standard Room', 'ETB 4,500', 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80')">
+                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Standard Room Door">
+                                <div class="door-overlay">
+                                    <h4>Standard Room</h4>
+                                    <p>ETB 4,500</p>
+                                </div>
+                            </div>
+                            <div class="gallery-door-item" onclick="openDoorModal('Privacy Room', 'ETB 6,000', 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80')">
+                                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Privacy Room Door">
+                                <div class="door-overlay">
+                                    <h4>Privacy Room</h4>
+                                    <p>ETB 6,000</p>
+                                </div>
+                            </div>
+                            <div class="gallery-door-item" onclick="openDoorModal('Master Room', 'ETB 7,500', 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80')">
+                                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Master Room Door">
+                                <div class="door-overlay">
+                                    <h4>Master Room</h4>
+                                    <p>ETB 7,500</p>
+                                </div>
+                            </div>
+                            <div class="gallery-door-item" onclick="openDoorModal('Bathroom Door', 'ETB 5,500', 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80')">
+                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Bathroom Door">
+                                <div class="door-overlay">
+                                    <h4>Bathroom Door</h4>
+                                    <p>ETB 5,500</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specialty Doors Gallery -->
+                <div class="gallery-category">
+                    <div class="category-header" onclick="toggleCategory('specialty')">
+                        <div class="category-info">
+                            <h3><i class="fas fa-shield-alt"></i> Specialty Doors</h3>
+                            <p>Security, French, and custom specialty door solutions</p>
+                        </div>
+                        <div class="category-toggle">
+                            <span class="door-count">6 Varieties</span>
+                            <i class="fas fa-chevron-down toggle-icon" id="specialty-icon"></i>
+                        </div>
+                    </div>
+                    <div class="category-content" id="specialty-content">
+                        <div class="door-grid">
+                            <div class="gallery-door-item" onclick="openDoorModal('Security Door', 'ETB 13,500', 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80')">
+                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Security Door">
+                                <div class="door-overlay">
+                                    <h4>Security Door</h4>
+                                    <p>ETB 13,500</p>
+                                </div>
+                            </div>
+                            <div class="gallery-door-item" onclick="openDoorModal('French Door', 'ETB 20,500', 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80')">
+                                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="French Door">
+                                <div class="door-overlay">
+                                    <h4>French Door</h4>
+                                    <p>ETB 20,500</p>
+                                </div>
+                            </div>
+                            <div class="gallery-door-item" onclick="openDoorModal('Sliding Door', 'ETB 11,500', 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80')">
+                                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Sliding Door">
+                                <div class="door-overlay">
+                                    <h4>Sliding Door</h4>
+                                    <p>ETB 11,500</p>
+                                </div>
+                            </div>
+                            <div class="gallery-door-item" onclick="openDoorModal('Pocket Door', 'ETB 10,500', 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80')">
+                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Pocket Door">
+                                <div class="door-overlay">
+                                    <h4>Pocket Door</h4>
+                                    <p>ETB 10,500</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Door Categories Section -->
+    <section id="doors" class="doors-section">
+        <div class="container">
+            <h2 class="section-title">Our Door Collection</h2>
+            <p class="section-subtitle">Choose from our premium imported door varieties</p>
+            
+            <div class="doors-grid">
+                <!-- Villa Doors -->
+                <div class="door-category">
+                    <div class="category-header">
+                        <h3>Villa Doors</h3>
+                        <span class="variety-count">5 Varieties</span>
+                    </div>
+                    <div class="door-cards">
+                        <div class="door-card">
+                            <div class="door-image">
+                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Classic Villa Door">
+                            </div>
+                            <div class="door-info">
+                                <h4>Classic Villa</h4>
+                                <p>Traditional wooden design</p>
+                                <div class="door-price">ETB 8,500</div>
+                                <button class="btn btn-small">Select</button>
+                            </div>
+                        </div>
+                        <div class="door-card">
+                            <div class="door-image">
+                                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Modern Villa Door">
+                            </div>
+                            <div class="door-info">
+                                <h4>Modern Villa</h4>
+                                <p>Contemporary glass panels</p>
+                                <div class="door-price">ETB 11,500</div>
+                                <button class="btn btn-small">Select</button>
+                            </div>
+                        </div>
+                        <div class="door-card">
+                            <div class="door-image">
+                                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Luxury Villa Door">
+                            </div>
+                            <div class="door-info">
+                                <h4>Luxury Villa</h4>
+                                <p>Premium materials & finish</p>
+                                <div class="door-price">ETB 17,500</div>
+                                <button class="btn btn-small">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Doors -->
+                <div class="door-category">
+                    <div class="category-header">
+                        <h3>Room Doors</h3>
+                        <span class="variety-count">4 Varieties</span>
+                    </div>
+                    <div class="door-cards">
+                        <div class="door-card">
+                            <div class="door-image">
+                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Standard Room Door">
+                            </div>
+                            <div class="door-info">
+                                <h4>Standard Room</h4>
+                                <p>Basic interior door</p>
+                                <div class="door-price">ETB 4,500</div>
+                                <button class="btn btn-small">Select</button>
+                            </div>
+                        </div>
+                        <div class="door-card">
+                            <div class="door-image">
+                                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Privacy Room Door">
+                            </div>
+                            <div class="door-info">
+                                <h4>Privacy Room</h4>
+                                <p>Soundproof design</p>
+                                <div class="door-price">ETB 6,000</div>
+                                <button class="btn btn-small">Select</button>
+                            </div>
+                        </div>
+                        <div class="door-card">
+                            <div class="door-image">
+                                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Master Room Door">
+                            </div>
+                            <div class="door-info">
+                                <h4>Master Room</h4>
+                                <p>Premium bedroom door</p>
+                                <div class="door-price">ETB 7,500</div>
+                                <button class="btn btn-small">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specialty Doors -->
+                <div class="door-category">
+                    <div class="category-header">
+                        <h3>Specialty Doors</h3>
+                        <span class="variety-count">3 Varieties</span>
+                    </div>
+                    <div class="door-cards">
+                        <div class="door-card">
+                            <div class="door-image">
+                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Security Door">
+                            </div>
+                            <div class="door-info">
+                                <h4>Security Door</h4>
+                                <p>Reinforced steel core</p>
+                                <div class="door-price">ETB 13,500</div>
+                                <button class="btn btn-small">Select</button>
+                            </div>
+                        </div>
+                        <div class="door-card">
+                            <div class="door-image">
+                                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="French Door">
+                            </div>
+                            <div class="door-info">
+                                <h4>French Door</h4>
+                                <p>Elegant double doors</p>
+                                <div class="door-price">ETB 20,500</div>
+                                <button class="btn btn-small">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section class="payment-section">
+        <div class="container">
+            <h2 class="section-title">Secure Payment</h2>
+            <p class="section-subtitle">Pay safely with Chap - your trusted local payment partner</p>
+            
+            <div class="payment-info">
+                <div class="payment-card">
+                    <div class="payment-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Chap Payment</h3>
+                    <p>Secure, fast, and reliable payment processing</p>
+                    <ul class="payment-features">
+                        <li><i class="fas fa-check"></i> Instant payment confirmation</li>
+                        <li><i class="fas fa-check"></i> Local currency support</li>
+                        <li><i class="fas fa-check"></i> 24/7 customer support</li>
+                        <li><i class="fas fa-check"></i> Mobile-friendly interface</li>
+                    </ul>
+                    <button class="btn btn-primary">Proceed to Payment</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Premium Doors</h2>
+                    <p>We specialize in importing high-quality doors from manufacturers around the world. Our mission is to bring you the finest door solutions for your home or business.</p>
+                    <p>With years of experience in international trade, we ensure that every door meets our strict quality standards before reaching your doorstep.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Door Varieties</p>
+                        </div>
+                        <div class="stat">
+                            <h3>15+</h3>
+                            <p>Countries</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Door Import Warehouse" class="about-warehouse-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Ready to transform your space? Contact us today!</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@premiumdoors.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Import Street, Trade City</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-door-open"></i>
+                    <span>Premium Doors</span>
+                </div>
+                <p>&copy; 2024 Premium Doors. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Button -->
+    <div class="floating-contact">
+        <button class="floating-btn" onclick="openContactModal()">
+            <i class="fas fa-phone"></i>
+            <span>Get Quote Now</span>
+        </button>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="contact-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Get Your Free Quote</h3>
+                <button class="close-modal" onclick="closeContactModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Get an instant quote for your door import needs. Our experts will contact you within 24 hours!</p>
+                <form class="quote-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Select Door Type</option>
+                            <option value="villa">Villa Doors</option>
+                            <option value="room">Room Doors</option>
+                            <option value="specialty">Specialty Doors</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Tell us about your project..." rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i>
+                        Get Free Quote
+                    </button>
+                </form>
+                <div class="modal-guarantee">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>100% Free • No Obligation • Instant Response</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
